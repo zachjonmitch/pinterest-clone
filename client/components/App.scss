@@ -1,0 +1,15 @@
+$pinterest-red: #bd081c;
+$gallery-grey: #ebebeb;
+$dove-grey: #717171;
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}

@@ -1,0 +1,177 @@
+#registration {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        background: url('https://s.pinimg.com/webapp/style/images/bg_multi_case_grid-9ede5d84.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        animation: moveImageUp 35s linear;
+        animation-fill-mode: forwards;
+        padding-bottom: 330px;
+        position: fixed;
+        box-sizing: content-box;
+    }
+
+    .login__btn {
+        background: $gallery-grey;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        height: 36px;
+        padding: 0 43px;
+        text-align: center;
+        border-radius: 4px;
+        line-height: 36px;
+        &:hover {
+            opacity: .9;
+        }
+        a {
+            text-decoration: none !important;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+
+    .card {
+        position: absolute;
+        background: white;
+        width: 400px;
+        height: 533px;
+        border-radius: 8px;
+        text-align: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .card__icon {
+        position: relative;
+        height: 55px;
+        margin-top: 30px;
+        .fa-pinterest {
+            font-size: 53px;
+            color: $pinterest-red;
+        }
+    }
+
+    .card__title {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 5px 26px 20px;
+        color: #555;
+    }
+
+    .card__sub-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #b5b5b5;
+        margin: -10px 26px 30px;
+    }
+
+    .card__disclaimer {
+        font-size: 12px;
+        color: #aaa;
+        margin: 0;
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 11px;
+            color: $dove-grey;
+        }
+    }
+
+    .signup {
+        width: 268px;
+        margin: 0 auto;
+        position: relative;
+        label {
+            display: none;
+        }
+        input {
+            background-color: #f0f0f0;
+            width: 100%;
+            border: 0px;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 10px;
+            position: relative;
+            margin-bottom: 7px;
+        }
+    }
+
+    .signup__error--email, .signup__error--password {
+        color: red;
+        font-size: 12px;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    .signup__btn--submit {
+        border: 0px;
+        height: 36px;
+        background-color: $pinterest-red;
+        padding: 0 18px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        width: 100%;
+        border-radius: 3px;
+        margin-top: 3px;
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    .signup__btn--facebook {
+        width: 100%;
+        border: 0px;
+        font-weight: bold;
+        background-color: #4267b2;
+        color: white;
+        height: 40px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .signup__btn--google {
+        width: 100%;
+        border: 0px;
+        font-weight: bold;
+        height: 40px;
+        background-color: #4285f4;
+        color: white;
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+
+    .footer {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 10px;
+        left: 0;
+        margin-bottom: 6px;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            padding: 4px 7px;
+        }
+    }
+}
+
+@keyframes moveImageUp {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-330px);
+    }
+}
