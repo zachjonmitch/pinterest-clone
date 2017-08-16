@@ -6,26 +6,35 @@ class Dashboard extends Component {
             <main id="dashboard">
                <nav className="masthead">
                     <div className="masthead__brand"></div>
-                    <ul className="masthead__list">
-                        <li className="masthead__item"></li>
-                        <li className="masthead__item"></li>
+                    <ul className="masthead__links">
+                        <li className="masthead__link"></li>
+                        <li className="masthead__link"></li>
                     </ul>
-                    <form className="form">
-                        <input className="form--search" type="search"/>
+                    <form className="masthead__form">
+                        <input className="masthead__input--search" type="search"/>
                     </form>
                     <div className="masthead__icons">
-                        <div className="masthead__icon--compass"></div>
-                        <div className="masthead__icon--add"></div>
-                        <div className="masthead__icon--alerts"></div>
-                        <div className="masthead__icon--avatar"></div>
+                        <div className="masthead__icon masthead--compass"></div>
+                        <div className="masthead__icon masthead--add"></div>
+                        <div className="masthead__icon masthead--alerts"></div>
+                        <div className="masthead__icon masthead--avatar"></div>
                     </div>
-                    <div className="masthead__mobile">
-                        <div className="masthead__mobile--brand"></div>
-                        <div className="masthead__mobile--search"></div>
-                        <div className="masthead__mobile--menu"></div>
-                        <div className="masthead__mobile--user"></div>
-                        <div className="masthead__mobile--brand"></div>
-
+                    <div className="masthead__mobiles">
+                        <div className="masthead__mobile">
+                            <span className="masthead__mobile--brand fa fa-pinterest"></span>
+                        </div>
+                        <div className="masthead__mobile">
+                            <span className="masthead__mobile--search fa fa-search"></span>
+                        </div>
+                        <div className="masthead__mobile">
+                            <span className="masthead__mobile--menu fa fa-bars"></span>
+                        </div>
+                        <div className="masthead__mobile">
+                            <span className="masthead__mobile--user fa fa-user"></span>
+                        </div>
+                        <div className="masthead__mobile">
+                            <span className="masthead__mobile--notifications fa fa-bell"></span>
+                        </div>
                     </div>
                </nav>
 

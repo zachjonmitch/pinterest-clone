@@ -13,7 +13,15 @@ let UserSchema = mongoose.Schema({
     },
     password: {
         type: String
-    }
+    },
+    bio: {
+        type: String
+    },
+    avatar: { 
+        type: String
+    },
+    following: [{ type: mongoose.Schema.ObjectId, ref: 'User' }],
+    followers: [{ type: mongoose.Schema.ObjectId, ref: 'User' }]
 });
 
 const User = module.exports = mongoose.model('User', UserSchema);
