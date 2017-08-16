@@ -12,7 +12,7 @@ class Register extends Component {
     render() {
         const { userSignupRequest, addFlashMessage, login } = this.props;
         return (
-            <section id="registration">
+            <main id="registration">
                 <section className="wrapper"></section>
 
                 <section className="login__btn">
@@ -49,7 +49,7 @@ class Register extends Component {
                     <Link to="/login">International</Link>
                 </section>
 
-            </section>
+            </main>
         )
     }
 }

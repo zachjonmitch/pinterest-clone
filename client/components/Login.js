@@ -10,7 +10,7 @@ class Login extends Component {
     render() {
         const { login } = this.props;
         return(
-            <section id="login">
+            <main id="login">
                 <NavigationBar />
                 <section className="wrapper"></section>
 
@@ -30,7 +30,7 @@ class Login extends Component {
                     </div>
                 </section>
 
-            </section>
+            </main>
         )
     }
 }

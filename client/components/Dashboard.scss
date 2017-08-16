@@ -1,0 +1,34 @@
+#dashboard {
+
+    #masthead {
+        height: 60px;
+        width: 100%;
+        background: grey;
+        position: fixed;
+        top: 0;
+    }
+
+    .masthead__brand {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0; 
+        top: 0;
+    }
+
+    .masthead__items {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+    }
+    
+    .form__search {
+        width: 50%;
+        height: 25px;
+        background: black;
+        position: absolute;
+        margin: 0 auto;
+    }
+    
+}
