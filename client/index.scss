@@ -1,4 +1,10 @@
+@import './sass/_variables';
+@import './sass/_global';
+@import './sass/_mixins';
 @import './components/App';
 @import './components/Dashboard';
 @import './components/Login';
 @import './components/Register';
+@import './components/NavigationBar';
+@import './components/LoginForm';
+@import './components/RegisterForm';

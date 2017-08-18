@@ -31,7 +31,7 @@
         margin-top: 30px;
         .fa-pinterest {
             font-size: 46px;
-            color: $pinterest-red;
+            color: $color__primary--pinterest-red;
         }
     }
 
@@ -45,7 +45,7 @@
     .card__disclaimer--reset {
         font-size: 12px;
         font-weight: bold;
-        color: $dove-grey;
+        color: $color__accent--dove-grey;
         margin: 3px 0 10px 0;
         text-decoration: none
     }
@@ -56,75 +56,8 @@
         a {
             text-decoration: none;
             margin-left: 3px;
-            color: $dove-grey;
+            color: $color__accent--dove-grey;
             font-weight: bold;
         }
-    }
-
-    .signin {
-        width: 268px;
-        margin: 0 auto;
-        position: relative;
-        label {
-            display: none;
-        }
-        input {
-            background-color: #f0f0f0;
-            width: 100%;
-            border: 0px;
-            border-radius: 3px;
-            font-weight: bold;
-            padding: 10px;
-            position: relative;
-            margin-bottom: 7px;
-        }
-    }
-
-    .signin__error--email, .signin__error--password {
-        color: red;
-        font-size: 12px;
-        text-align: left;
-        margin: 0;
-        margin-bottom: 5px;
-        padding: 0;
-    }
-
-    .signin__btn--submit {
-        border: 0px;
-        height: 36px;
-        background-color: $pinterest-red;
-        padding: 0 18px;
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
-        color: white;
-        width: 100%;
-        border-radius: 3px;
-        margin-top: 3px;
-        &:hover {
-            opacity: .9;
-        }
-    }
-
-    .signin__btn--facebook {
-        width: 100%;
-        border: 0px;
-        font-weight: bold;
-        background-color: #4267b2;
-        color: white;
-        height: 40px;
-        margin-bottom: 5px;
-        cursor: pointer;
-    }
-    
-    .signin__btn--google {
-        width: 100%;
-        border: 0px;
-        font-weight: bold;
-        height: 40px;
-        background-color: #4285f4;
-        color: white;
-        margin-bottom: 12px;
-        cursor: pointer;
     }
 }

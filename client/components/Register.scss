@@ -14,7 +14,7 @@
     }
 
     .login__btn {
-        background: $gallery-grey;
+        background: $color__accent--gallery-grey;
         position: absolute;
         top: 25px;
         right: 25px;
@@ -54,7 +54,7 @@
         margin-top: 30px;
         .fa-pinterest {
             font-size: 53px;
-            color: $pinterest-red;
+            color: $color__primary--pinterest-red;
         }
     }
 
@@ -80,75 +80,8 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 11px;
-            color: $dove-grey;
+            color: $color__accent--dove-grey;
         }
-    }
-
-    .signup {
-        width: 268px;
-        margin: 0 auto;
-        position: relative;
-        label {
-            display: none;
-        }
-        input {
-            background-color: #f0f0f0;
-            width: 100%;
-            border: 0px;
-            border-radius: 3px;
-            font-weight: bold;
-            padding: 10px;
-            position: relative;
-            margin-bottom: 7px;
-        }
-    }
-
-    .signup__error--email, .signup__error--password {
-        color: red;
-        font-size: 12px;
-        text-align: left;
-        margin: 0;
-        margin-bottom: 5px;
-        padding: 0;
-    }
-
-    .signup__btn--submit {
-        border: 0px;
-        height: 36px;
-        background-color: $pinterest-red;
-        padding: 0 18px;
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
-        color: white;
-        width: 100%;
-        border-radius: 3px;
-        margin-top: 3px;
-        &:hover {
-            opacity: .9;
-        }
-    }
-
-    .signup__btn--facebook {
-        width: 100%;
-        border: 0px;
-        font-weight: bold;
-        background-color: #4267b2;
-        color: white;
-        height: 40px;
-        margin-bottom: 5px;
-        cursor: pointer;
-    }
-
-    .signup__btn--google {
-        width: 100%;
-        border: 0px;
-        font-weight: bold;
-        height: 40px;
-        background-color: #4285f4;
-        color: white;
-        margin-bottom: 12px;
-        cursor: pointer;
     }
 
     .footer {
