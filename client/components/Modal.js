@@ -11,7 +11,7 @@ class Modal extends Component {
                 <div className="modal__content">
                     <h1 className="modal__title">Save from a device</h1>
 
-                    <form className="post-form" action="api/posts/new-post" method="POST" enctype="multipart/form-data">
+                    <form className="post-form" action="api/posts/new-post" method="POST" encType="multipart/form-data">
                         <div className="post-form__group">
                             <label>Choose a Pin image</label>
                             <input className="post-form__input post-form--image" name="file" type="file" accept="image/*"/>
