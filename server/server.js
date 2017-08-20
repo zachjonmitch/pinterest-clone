@@ -15,6 +15,7 @@ import webpackConfig from '../webpack.config.dev';
 
 import users from './routes/users.js';
 import auth from './routes/auth.js';
+import posts from './routes/posts.js';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -28,6 +29,7 @@ app.use(cookieParser());
 
 app.use('/api/users', users);
 app.use('/api/auth', auth);
+app.use('/api/posts', posts);
 
 app.use(session({
     secret: 'secret',

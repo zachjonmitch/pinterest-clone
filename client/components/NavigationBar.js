@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { logout } from '../actions/authActions.js';
+import Modal from './Modal.js';
 
 class NavigationBar extends Component {
     constructor(props) {
@@ -11,6 +12,7 @@ class NavigationBar extends Component {
     }
 
     openModal() {
+        console.log("testing")
         this.setState({ isModalOpen: true })
     }
 
@@ -42,13 +44,16 @@ class NavigationBar extends Component {
                 <div className="masthead__brand">
                     <span className="masthead__brand--pinterest fa fa-pinterest fa-2x"></span>
                 </div>
+
                 <ul className="masthead__links">
                     <li className="masthead__link">Analytics</li>
                     <li className="masthead__link">Ads</li>
                 </ul>
-                <form className="masthead__form">
-                    <input className="masthead__input--search" type="search" placeholder="search"/>
+
+                <form className="search-form">
+                    <input className="search-form__input" type="search" placeholder="search"/>
                 </form>
+                
                 <div className="masthead__icons">
                     <div className="masthead__icon">
                         <span className="masthead__icon--compass fa fa-compass"></span>
@@ -68,11 +73,7 @@ class NavigationBar extends Component {
                     { isAuthenticated ? userLinks : guestLinks }
                 </div>
 
-                <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-                    <h1>Modal title</h1>
-                    <p>hello</p>
-                    <p><button onClick={() => this.closeModal()}>Close</button></p>
-                </Modal>
+                <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()} />
 
                 <div className="masthead__mobiles">
                     <div className="masthead__mobile">
