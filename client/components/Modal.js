@@ -20,6 +20,14 @@ class Modal extends Component {
                             <label>Destination URL</label>
                             <input className="post-form__input post-form--url" name="url" type="text"/>
                         </div>
+                        <div className="post-form__group">
+                            <label>Title</label>
+                            <input className="post-form__input post-form--title" name="title" type="text"/>
+                        </div>
+                        <div className="post-form__group">
+                            <label>Description</label>
+                            <input className="post-form__input post-form--description" name="description" type="text"/>
+                        </div>
                         <button className="post-form__submit">Submit</button>
                     </form>
 

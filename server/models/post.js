@@ -9,6 +9,9 @@ let PostSchema = mongoose.Schema({
     image: {
         type: String
     },
+    url: {
+        type: String
+    },
     title: {
         type: String
     },
@@ -27,3 +30,7 @@ let PostSchema = mongoose.Schema({
 });
 
 const Post = module.exports = mongoose.model('Post', PostSchema);
+
+module.exports.createPost = (newPost, callback) => {
+    newPost.save(callback);
+}

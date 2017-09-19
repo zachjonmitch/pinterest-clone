@@ -13,6 +13,7 @@ import webpackMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import webpackConfig from '../webpack.config.dev';
 
+import baseRoutes from './routes/app.js';
 import users from './routes/users.js';
 import auth from './routes/auth.js';
 import posts from './routes/posts.js';
@@ -27,6 +28,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser());
 
+app.use('/', baseRoutes);
 app.use('/api/users', users);
 app.use('/api/auth', auth);
 app.use('/api/posts', posts);
