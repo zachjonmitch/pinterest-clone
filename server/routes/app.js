@@ -1,8 +1,9 @@
-const express = require('express');
+import express from 'express';
+import path from 'path';
 const router = express.Router();
 
-router.get('/:username', (req, res) => {
+router.get('/users/:username', (req, res) => {
+    console.log("testing");
+});
 
-})
-
-module.exports = router;
+export default router;

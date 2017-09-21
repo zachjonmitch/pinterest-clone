@@ -30,4 +30,9 @@ router.post('/', (req, res) => {
     })
 })
 
+router.post('/logout', (req, res) => {
+    req.user = '';
+    console.log(req.user);
+});
+
 export default router;

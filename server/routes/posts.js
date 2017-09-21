@@ -2,11 +2,12 @@ import express from 'express';
 import multer from 'multer';
 
 import Post from '../models/post.js';
+import authenticate from '../middleware/authenticate.js';
 
 let upload = multer({ dest: './uploads/' });
 let router = express.Router();
 
-router.post('/new-post', upload.single('file'), (req, res) => {
+router.post('/new-post', authenticate, upload.single('file'), (req, res) => {
     const url = req.body.url;
     const file = req.file.filename;
     const title = req.body.title;
